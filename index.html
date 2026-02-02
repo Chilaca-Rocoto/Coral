@@ -2,29 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Coral – Senior Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coral — Senior Project</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-  <h1>Coral</h1>
-  <p><strong>Senior Capstone Project – Computer Science</strong></p>
+  <center>
+    <table class="frame" cellspacing="0" cellpadding="12">
+      <tr>
+        <td>
 
-  <h2>Overview</h2>
-  <p>
-    Coral is a senior capstone project focused on building a scalable system
-    for experimentation and future frontend development.
-  </p>
+          <marquee behavior="scroll" direction="left" scrollamount="6">
+            🚧 WELCOME TO CORAL — CS 426 SENIOR PROJECT (TEAM 7) 🚧  NEW UPDATES COMING SOON  🚧
+          </marquee>
 
-  <h2>Current Status</h2>
-  <ul>
-    <li>Project repository created</li>
-    <li>GitHub Pages deployed</li>
-    <li>Frontend planned for later development</li>
-  </ul>
+          <h1>🐚 CORAL</h1>
+          <p class="subtitle">Senior Capstone Project • CS 426 • University of Nevada, Reno</p>
 
-  <h2>Repository</h2>
-  <p>
-    <a href="https://github.com/Chilaca-Rocoto/Coral">View on GitHub</a>
-  </p>
+          <img class="divider" src="images/divider.gif" alt="divider" />
+
+          <table class="inner" cellpadding="10">
+            <tr>
+              <td class="leftcol" valign="top">
+                <h2>Site Nav</h2>
+                <ul class="nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#status">Status</a></li>
+                  <li><a href="#team">Team</a></li>
+                  <li><a href="#links">Links</a></li>
+                </ul>
+
+                <img class="construction" src="images/under_construction.gif" alt="under construction" />
+              </td>
+
+              <td class="maincol" valign="top">
+                <h2 id="about">About</h2>
+                <p>
+                  This project consists of a pipeline between a machine learning agent and a fighting game written using Python, C#, and Unity that allows a neural network to learn how to play a 2D stick fighter. The user interface, Coral, is developer friendly and allows customization and parameter tuning along with model saving, loading, and comparison. Coral is integrated within the game itself, which reduces complexity for the developers training the model. Different attributes that measure performance are tracked and displayed within Coral, and network engineers can set hyperparameters from the interface as well. Coral allows the network engineer to save and load .onnx files directly from the interface.
+                </p>
+
+                <h2 id="status">Current Status</h2>
+                <ul>
+                  <li>GitHub repo created </li>
+                  <li>GitHub Pages deployed </li>
+                  <li>Frontend content coming soon </li>
+                </ul>
+
+                <h2 id="team">Team</h2>
+                <p>
+                  <ul>
+                    <p>Chanel Koh:  <a href = "https://www.linkedin.com/in/chanelkoh/">Linked In</a> | <a href = "https://github.com/chanel-koh">Github</a> </p>
+                    <p>Alex Zorzella: <a href = "https://www.linkedin.com/in/alex-zorzella-04122b294/">Linked In</a> | <a href = "https://github.com/alexzorzella">Github</a></p>
+                    <p>Alyssa Workman: <a href = "">Linked In</a> | <a href = "https://github.com/SmartestLizard">Github</a></p>
+                    <p>Jared Baze: <a href = "https://www.linkedin.com/in/jared-baze-29b376272/">Linked In</a> | <a href = "https://github.com/BazeJared">Github</a></p>
+
+                  </ul>
+
+                </p>
+
+                <h2 id="links">Links</h2>
+                <ul>
+                  <li><a href="https://github.com/Chilaca-Rocoto/Capstone">GitHub Repository</a></li>
+                </ul>
+
+                <p class="footer">
+                  <span id="year"></span> Coral Project • <a href="mailto:highqualitybackup@gmail.com">Contact</a>
+                </p>
+              </td>
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </center>
 </body>
 </html>

@@ -1,17 +1,136 @@
 body {
-    font-family: system-ui, -apple-system, sans-serif;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
-    line-height: 1.6;
+    background: #000080;
+    color: #00ff00;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .frame {
+    width: 800px;
+    background: #c0c0c0;
+    border: 6px ridge #ffffff;
+  }
+  
+  marquee {
+    background: #000000;
+    color: #ffff00;
+    font-weight: bold;
+    padding: 6px;
+    border: 3px inset #666;
   }
   
   h1 {
-    margin-bottom: 0;
+    margin: 14px 0 4px 0;
+    color: #ff00ff;
+    text-shadow: 2px 2px #000;
+  }
+  
+  .subtitle {
+    margin-top: 0;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .divider {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+  }
+  
+  .inner {
+    width: 100%;
+    background: #ffffff;
+    border: 4px groove #999;
+  }
+  
+  .leftcol {
+    width: 220px;
+    background: #f0f0f0;
+    border-right: 3px solid #999;
+  }
+  
+  .maincol {
+    background: #ffffff;
+    color: #000;
+  }
+  
+  .nav {
+    list-style: square;
+    padding-left: 18px;
   }
   
   a {
-    color: #2563eb;
-    text-decoration: none;
+    color: #0000ee;
+  }
+  
+  a:visited {
+    color: #551a8b;
+  }
+  
+  .badge {
+    background: #ffff00;
+    color: #000;
+    font-weight: bold;
+    padding: 6px;
+    border: 2px dashed #000;
+  }
+  
+  .construction {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  
+  .footer {
+    margin-top: 18px;
+    font-size: 1
+  }  
+  .release-list {
+    display: grid;
+    gap: 12px;
+  }
+  
+  .release-card {
+    border: 1px solid rgba(0,0,0,0.12);
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  
+  .release-title {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    font-weight: 600;
+  }
+  
+  .release-title code {
+    font-weight: 500;
+    font-size: 0.9em;
+    padding: 2px 6px;
+    border-radius: 6px;
+    background: rgba(0,0,0,0.06);
+  }
+  
+  .release-meta {
+    font-size: 0.9em;
+    opacity: 0.75;
+    margin-top: 4px;
+  }
+  
+  .release-body {
+    margin-top: 10px;
+    white-space: pre-wrap;
+  }
+  
+  .release-footer {
+    margin-top: 10px;
+    font-size: 0.9em;
+    opacity: 0.8;
+  }
+  
+  .muted {
+    font-size: 0.9em;
+    opacity: 0.7;
   }
   
