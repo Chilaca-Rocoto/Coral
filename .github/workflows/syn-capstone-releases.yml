@@ -1,0 +1,39 @@
+name: Sync Capstone Releases
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"  # every 30 minutes
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch releases from Capstone
+        env:
+          TOKEN: ${{ secrets.CAPSTONE_TOKEN }}
+        run: |
+          set -e
+          mkdir -p data
+          curl -sS -L \
+            -H "Authorization: token $TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/Chilaca-Rocoto/Capstone/releases?per_page=10" \
+            > data/releases.json
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add data/releases.json
+          git commit -m "Update Capstone releases feed"
+          git push
