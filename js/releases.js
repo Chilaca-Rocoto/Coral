@@ -49,9 +49,9 @@ async function loadReleases() {
       return;
     }
 
-    const cards = releases
-      .slice(0, MAX_RELEASES)
-      .map((r) => {
+      const cards = releases
+        .slice(0, MAX_RELEASES)
+        .map((r, index) => {
         const title = escapeHtml(r.name || r.tag_name || "Release");
         const tag = r.tag_name
           ? `<code>${escapeHtml(r.tag_name)}</code>`
