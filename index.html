@@ -42,13 +42,11 @@
                 <p>
                   This project consists of a pipeline between a machine learning agent and a fighting game written using Python, C#, and Unity that allows a neural network to learn how to play a 2D stick fighter. The user interface, Coral, is developer friendly and allows customization and parameter tuning along with model saving, loading, and comparison. Coral is integrated within the game itself, which reduces complexity for the developers training the model. Different attributes that measure performance are tracked and displayed within Coral, and network engineers can set hyperparameters from the interface as well. Coral allows the network engineer to save and load .onnx files directly from the interface.
                 </p>
-
                 <h2 id="status">Current Status</h2>
-                <ul>
-                  <li>GitHub repo created </li>
-                  <li>GitHub Pages deployed </li>
-                  <li>Frontend content coming soon </li>
-                </ul>
+
+                <div id="release-status">
+                  <p>Loading latest releases…</p>
+                </div>
 
                 <h2 id="team">Team</h2>
                 <p>
@@ -81,6 +79,8 @@
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+
+    <script src="js/releases.js"></script>
   </center>
 </body>
 </html>
