@@ -58,10 +58,6 @@ async function loadReleases() {
           : "";
         const date = formatDate(r.published_at);
         const url = r.html_url;
-
-        // const body = (r.body || "").trim();
-        // const snippet =
-        //   body.length > 220 ? escapeHtml(body.slice(0, 220)) + "…" : escapeHtml(body);
         const body = (r.body || "").trim();
 
         const snippet =
